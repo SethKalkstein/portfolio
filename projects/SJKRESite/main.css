@@ -1,0 +1,593 @@
+
+@font-face {
+  font-family: "Frutiger Black";
+  src: url("./fonts/FrutigerBlack/AdobeFrutigerLTStdBlack.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Frutiger Bold";
+  src: url("./fonts/FrutigerBold/Adobe-FrutigerLTStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Frutiger Roman";
+  src: url("./fonts/FrutigerRoman/Adobe-FrutigerLTStd-Roman.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: "Goudy";
+  src: url("./fonts/Goudy/AdobeGoudyStd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Goudy Bold";
+  src: url("./fonts/GoudyBold/AdobeGoudyStdBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Goudy Extra Bold";
+  src: url("./fonts/GoudyExtraBold/Adobe-GoudyStd-ExtraBold.otf") format("opentype");
+}
+
+*{
+	margin: 0px;
+	padding: 0px; 
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	background-image: url(images/cityHallLove.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 600px;
+	
+}
+
+header li{
+	padding: 3px;
+	text-align: center;
+	font-family: "Goudy Bold";
+}
+
+
+.navigation-list {
+	display: flex;
+  	justify-content: center;
+}
+
+.js-nav-list {
+	display: flex;
+  	justify-content: space-between;	
+}
+
+.nav-item {
+	padding: 2%;
+	font-size: 1.75em;
+}
+
+.jsHeaderSticky{
+	font-family: "Goudy Bold";
+	position: fixed;
+	background-color: rgba(177, 0, 93, .95);
+	margin: 0 auto;
+	border-bottom: 1px dotted grey;
+	width: 100%;
+}
+.nav-link {
+	color: white;
+	text-shadow: .2em .2em .2em black;
+}
+
+.jsStickyNavItem {
+	font-size: 10px;
+	color: black;
+	text-shadow: none;
+	display: flex;
+}
+
+.titleFloat{
+	display: block;
+	color: white;
+	text-shadow: .2em .2em .2em black;
+	font-size: 2em;
+	visibility: hidden;
+}
+
+.jsStickyH3{
+	color: black;
+	text-decoration: none;
+	font-size: 10px;
+	text-shadow: none;
+	display: inline;
+	padding: 0px 5px;
+	/*border: 1px solid black;*/
+	font-weight: normal;
+}
+
+.material-icons{
+	font-size: 30px;
+}
+
+
+.sjkre-floater{
+	padding: 4% 6%;
+}
+
+.text-section img{
+	width: 10%;
+	border-radius: 5%;
+	float: left;
+	margin: 1%; 
+}
+
+.text-section {
+	padding: 3%;
+}
+.text-section h1{
+	font-family: "Goudy";
+	text-align: center;
+	font-size: 2em;
+}
+
+.text-section p {
+	font-family: "Frutiger Black";
+	padding: 1%;
+	text-align: justify;
+}
+
+.text-section p:last-child {
+	border-bottom: 1px dashed black;
+	padding: 1% 1% 2% 1%;
+}
+
+li {
+	list-style: none;
+}
+
+#listings {
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+	grid-template-rows: 1fr 1fr 10fr 1fr;
+	width: 95%;
+	text-align: center;
+	margin: 0px auto;
+	padding-bottom: 15px;
+	/*border-bottom: 1px dashed rgb(177, 0, 93);*/
+
+}
+#listings h1{
+	grid-column: 1 / 6; 
+	grid-row: 1 / 2;
+	font-family: "Goudy Bold";
+}
+
+#listings h2{
+	grid-column: 1 / 6; 
+	grid-row: 2 / 3;
+	font-family: "Goudy";
+}
+
+#prev{
+	grid-column: 1 / 2;
+	grid-row: 3 / 5;
+	/*border: 1px solid green;*/
+	background-image: url(./images/prev.png);
+	background-size: 95% 69%;
+	margin-top: 69px;
+	margin-left: 5%;
+	background-repeat: no-repeat;
+	/*text-align: end;*/
+	/*float: right;*/
+}
+
+#listings img{
+	height: 150px;
+	width: 150px;
+}
+
+
+#listing-image1{
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	/*border: 1px solid brown;*/
+}
+
+#listing-image2{
+	grid-column: 3 / 4;
+	grid-row: 3 / 4;
+	/*border: 1px solid brown;*/
+}
+#listing-image3{
+	grid-column: 4 / 5;
+	grid-row: 3 / 4;
+	/*border: 1px solid brown;*/
+}
+
+#next {
+	grid-column: 5 / 6;
+	grid-row: 3 / 5;
+	/*border: 1px solid red;*/
+	background-image: url(./images/next.png);
+	background-size: 95% 69%;
+	margin-top: 69px;
+	padding: 5%;
+	background-repeat: no-repeat;
+}
+
+.listing-images {
+	padding: 5%;
+}
+
+.listing-images img{
+	min-height: 100%;
+	min-width: 100%;
+	border-radius: 10%;
+	box-shadow: 3px 3px 3px 3px grey;
+}
+
+.listing-images a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 10%;
+	box-shadow: 5% 5% 5% 5% grey;
+}
+
+#listing-heading1{
+	grid-column: 2 / 3;
+	grid-row: 4 / 5;
+	/*border: 1px solid blue;*/
+}
+
+#listing-heading2{
+	grid-column: 3 / 4;
+	grid-row: 4 / 5;
+	/*border: 1px solid blue;*/
+}
+#listing-heading3{
+	grid-column: 4 / 5;
+	grid-row: 4 / 5;
+	/*border: 1px solid blue;*/
+}
+
+.listing-headings {
+	font-family: "Frutiger Black";
+	text-align: center;
+	align-self: center;
+	font-size: 1.5em;
+}
+
+.listing-link1, .listing-link2, .listing-link3 {
+	text-decoration: none;
+	color: rgb(177, 0, 93);
+}
+
+#contact {
+	display: grid;
+	grid-auto-columns: 2fr 2fr 1fr 2fr;
+	grid-template-areas: "offices contacts social logos"
+						 "copy copy copy copy";
+	padding: 10px 2%;
+	width: 100%;
+	/*margin-top: 15px;*/
+	color: white;
+	background-color: rgba(22, 41, 52, .95);
+	font-family: "Frutiger";
+	/*grid-column-border: 1px solid black;*/
+}
+
+#offices {
+	grid-area: offices;
+	border-right: 1px solid rgb(177, 0, 93);
+	font-family: "Frutiger";
+	/*text-align: center;*/
+}
+
+#offices div{
+	padding: 3%;
+	margin-left: 10px;
+}
+
+#offices h5 {
+	font-weight: bold;
+	font-size: 1.25em;
+	font-family: "Goudy Bold";
+}
+
+.location {
+	text-align: center;
+	/*padding: 0px;*/
+}
+
+.lic {
+	color: white;
+	padding-top: 15px;
+	font-family: "Frutiger";
+}
+
+#personal-contact {
+	color: white;
+	grid-area: contacts;
+	/*text-align: center;*/
+	padding: 15px;
+	border-right: 1px solid rgb(177, 0, 93);
+}
+
+#personal-contact a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 10px;
+	font-size: .75em;
+	text-align: center;
+}
+
+#personal-contact p {
+	/*display: inline-block;*/
+	padding-left: 10px;
+	margin-top: 25%;
+	color: white;
+	font-family: "Frutiger";
+}
+
+#social-media {
+	grid-area: social;
+	border-right: 1px solid rgb(177, 0, 93);
+	align-content: center;
+}
+
+#social-media a {
+	display: block;
+	align-self: center;
+	padding: 5%;
+	margin: 0 auto;
+	/*width: 20%;*/
+}
+
+#social-media img {
+	display: block;
+	width: 35%;
+	align-self: center;
+	border-radius: 20%;
+	margin: 0 auto;
+}
+
+#logos {
+	grid-area: logos;
+}
+
+#logos img {
+	padding: 5%;
+}
+
+#elfant {
+	display: block;
+	width: 25%;
+	margin-left: 10px;
+}
+
+.realestate {
+	width: 10%;
+	display: inline;
+	padding-left: 10px;
+	text-align: center;
+}
+
+#logos h3 {
+	color: white;
+	font-size: 1.25em;
+	padding: 5%;
+	margin-bottom: 5px;
+}
+
+#copyright {
+	color: rgb(177, 0, 93);
+	grid-area: copy;
+	border-top: 1px dashed rgb(177, 0, 93);
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 15px;
+	font-family: "Frutiger";
+}
+
+
+
+
+@media all and (min-width: 481px) and (max-width: 992px){
+	header{
+		height: 300px;
+	}
+	ul{
+		display: flex;
+  		justify-content: center;
+	}
+	ul li {
+		padding: 2%;
+		font-size: 1em;
+	}
+
+	.nav-item {
+		padding: 2%;
+		font-size: 1.25em;
+	}
+
+
+	.nav-link {
+		text-shadow: .1em .1em .1em black;
+	}
+
+
+	.titleFloat{
+		text-shadow: .1em .1em .1em black;
+		font-size: 1em;
+	}
+
+	.jsStickyH3{
+		font-size: 1em;
+	}
+
+	#sjkre-floater{
+		font-size: 1em;
+	}
+	#listing-image3, #listing-heading3 {
+		display: none;
+	}
+	#listings{
+		grid-template-columns: 1fr 4.5fr 4.5fr 1fr;
+	}
+
+	#listings h1{
+		grid-column: 1 / 5; 
+	}
+
+	#listings h2{
+		grid-column: 1 / 5; 
+	}
+
+	#prev{
+		grid-column: 1 / 2;
+	}
+
+	#next {
+		grid-column: 4 / 5;
+	}
+	#contact{
+		grid-auto-columns: 1fr 1fr;
+		grid-template-areas: "offices contacts"
+						 "social logos"
+						 "copy copy";
+	}
+	#offices {
+		border-bottom: 1px dashed rgb(177, 0, 93); 
+		border-right: 1px dashed rgb(177, 0, 93);
+	}
+	#personal-contact {
+		border-right: none;
+		border-bottom: 1px dashed rgb(177, 0, 93);
+	}
+
+	#social-media {
+		border-right: 1px dashed rgb(177, 0, 93);
+	}
+
+	
+
+/*	#logos {
+		grid-area: logos;
+	}*/
+
+}
+
+@media all and (max-width: 480px) {
+	header {
+		height: 200px;
+		background-image: none;
+		background-color: rgb(22, 41, 52);
+	}
+	.navigation-list{
+		display: block;
+	}
+	.nav-item {
+		display: block;
+		font-size: .8em;
+	}
+	.nav-link {
+		display: block;
+	}
+	.titleFloat{
+		display: inline;
+		visibility: visible;
+		padding-right: 3px;
+		font-size: 1.5em;
+	}
+	.sjkre-floater{
+		display: block;
+	}
+	#listings{
+		grid-template-columns: 1fr 9fr 1fr;
+		grid-template-rows: 1fr 1fr 3fr 1fr;
+	}
+
+	#listings h1{
+		grid-column: 1 / 4; 
+	}
+
+	#listings h2{
+		grid-column: 1 / 4; 
+	}
+
+	#prev{
+		grid-column: 1 / 2;
+		background-size: 95% 15%;
+	}
+
+	#next {
+		grid-column: 3 / 4;
+		background-size: 95% 15%;
+	}
+
+	#listing-image3, #listing-heading3,	 #listing-image2, #listing-heading2 {
+		display: none;
+	}
+
+	.listing-images img {
+		min-height: 100%;
+	}
+
+	#listings img{
+		height: 75px;
+		width: 75px;
+	}
+
+	#contact{
+		grid-template-columns: 1fr;
+		grid-template-areas: "offices" 
+							"contacts"
+						 "social" 
+						 "logos"
+						 "copy";
+	}
+	#offices {
+		border-bottom: 1px dashed rgb(177, 0, 93); 
+		border-right: none;
+	}
+	.location {
+		display: inline-block;
+	}
+	.location p, .location h5 {
+		text-align: left;
+		margin: 2px auto;
+	}
+	#personal-contact {
+		border-right: none;
+		border-bottom: 1px dashed rgb(177, 0, 93);
+	}
+
+	#social-media {
+		border-bottom: 1px dashed rgb(177, 0, 93);
+	}
+
+	#personal-contact p {
+		margin-top: 3%;
+	}
+	#personal-contact a {
+		text-align: left;
+		padding-top: 1px;
+	}
+	#social-media img, #social-media a {
+		display: inline;
+		width: 20%;
+		margin: 15px auto;
+	}
+
+/*	#logos {
+		grid-area: logos;
+	}*/
+}
+
+
