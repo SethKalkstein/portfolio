@@ -1,0 +1,161 @@
+
+@font-face {
+  font-family: "Pokemon Solid";
+  src: url("./PokemonSolid.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Pocket Monk";
+  src: url("./PocketMonk.otf") format("opentype");
+}
+
+*{
+	background-color: lightgrey;
+	padding: 0px;
+	margin: 0px;
+}
+
+#body-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr 2fr;
+/*	grid-template-areas: 
+		"logo logo heading heading"
+		" blank name blank stats"
+		"larrow  pic    rarrow  stats"
+		"footer  footer footer  footer";*/
+}
+
+header {
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+	background-color: red;
+	border-bottom: 10px solid black;
+	display: grid;
+	grid-template-columns: 5fr 3fr;
+}
+
+#logo {
+	grid-column: 1 / 2;
+	width: 70%;
+	background-color: red;
+	justify-self: center; 
+	margin-bottom: 1%;
+}
+
+#trainer {
+	font-family: "Pokemon Solid";
+	color: #ffcb05;
+	text-shadow: 5px 5px #395fa9;
+	text-transform: capitalize;
+	font-size: 2em;
+	background-color: red;
+	/*grid-area: "heading";*/
+	grid-column: 2 / 3;
+	/*grid-row: 1 / 2;*/
+	align-self: self-end;
+}
+
+#pokeName{
+	font-family: "Pocket Monk";
+	color: #ffcb05;
+	text-shadow: 4px 4px #395fa9;
+	text-transform: capitalize;
+	font-size: 3em;
+	/*grid-area: "name";*/
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	justify-self: center;
+	padding: 5% 0;
+}
+
+#pokePic{
+/*	height: 200px;
+	width: 200px;*/
+	background-size: 100% 100%;
+	/*height: 100%;*/
+	width: 75%;
+	justify-self: center;
+/*	border: 5px solid red;*/
+	border-radius: 50%;
+	background-image: url("Pokeball2.png");
+	/*grid-area: "pic";*/
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	margin-bottom: 3%;
+}
+
+#back{
+	background-image: url("leftArrow.png");
+	background-size: 100% 100%;
+	/*grid-area: "larrow";*/
+/*	height: 200px;
+	width: 75px; */
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+
+#next{
+	background-image: url("rightArrow.png");
+	background-size: 100% 100%;
+	/*grid-area: "rarrow";*/
+/*	height: 200px;
+	width: 75px;*/
+	grid-column: 3 / 4;
+	grid-row: 3 / 4;
+}
+#stats{
+	/*grid-area: "stats";*/
+	grid-column: 4 / 5;
+	grid-row: 2 / 4;
+	margin-top: 15%;	
+	/*background-color: red;*/
+	/*border: 2px solid black;*/
+}
+.statType{
+	text-decoration: underline;
+}
+
+#statsHeading, .statType, #hp, #attack, #defense, #abilities {
+	background-color: red;
+	margin-right: 25%;
+	padding: 1%;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+#abilities li{
+	background-color: red;
+	margin-left: 10%;
+/*	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;*/
+}
+#statsHeading {
+	border-top: 3px solid black;
+	border-bottom: 1.5px dotted lightgrey;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#abilities{
+	border-bottom: 3px solid black;
+}
+
+#footer {
+	/*grid-area: "footer";*/
+	grid-column: 1 / 5;
+	grid-row: 4 / 5;
+	font-family: "Pocket Monk";
+	color: #ffcb05;
+	font-size: 2em;
+	text-shadow: 4px 4px #395fa9;
+	background-color: red;
+	border-top: 2px solid black;
+	margin-top: 5px;
+	/*padding-left: auto;*/
+}
+footer p {
+	background-color: red;
+	text-align: center;
+	padding: 1%;
+}

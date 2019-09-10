@@ -1,0 +1,82 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: #f9f2ac;
+}
+
+nav {
+	width: 90%;
+	display: flex;
+	margin: 0px auto;
+	padding: 5px;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px auto;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+nav a:hover{
+	color: lightgrey;
+}
+
+h1{
+	text-align: center;
+	padding: 5px;
+	border-top: 2px solid;
+}
+
+main img {
+	height: 200px;
+	width: 200px;
+	float: left; 
+	margin-right: 5px;
+}
+
+#clock{
+	padding: 200px;
+	margin: 0px auto;
+}
+
+#modal {
+	background-color: #fdffef;
+	padding: 10px;
+}
+
+#clock-wrapper {
+	display: grid;
+	grid-template-columns: 1fr .2fr 1fr .2fr 1fr 1.2fr;
+	width: 180px;
+	border: 2px solid white;
+	border-radius: 25px;
+	padding: 5px 20px 5px 10px;
+	margin: 0px auto;
+}
+
+#clock-wrapper div{
+	height: 40px;
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}
+
+#modal p {
+	padding: 10px;
+}
+
+footer {
+	padding: 20px;
+}
+footer h4 {
+	padding: 5px 0px;
+}
+footer h5 {
+	padding: 0 0 0 1px;
+}
