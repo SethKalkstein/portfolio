@@ -1,3 +1,23 @@
+<?php 
+/**
+ * ^title^SJK Real Estate^/title^
+ * 
+ * ^gitRepo^ ^/gitRepo^
+ * 
+ * ^tech^ ^/tech^
+ * 
+ * ^highlights^ ^/highlights^
+ * 
+ * ^description^ ^/description^
+ * 
+ * ^image^ ^/image^
+ * 
+ * ^path^here^/path^
+ * 
+ * ^order^ ^/order^
+ * 
+ */
+?>
 <!DOCTYPE html>
 <html>
 <head>

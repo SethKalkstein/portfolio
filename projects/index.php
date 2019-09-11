@@ -26,6 +26,22 @@
         $testFile = file_get_contents("personalSite/index.php");
 
         echo parseAtt("description", $testFile);
+
+        foreach ( array_diff(scandir("."), array('..', '.')) as $dir) {
+            if (is_dir($dir)) {
+
+                echo "<br> dir: ".$dir."<br>";
+                $headerInfo = file_get_contents($dir."/index.php");
+                $projectTitle = parseAtt("title", $headerInfo);
+                echo "<h1>".$projectTitle."</h1>";
+            }
+        }
+        // $directories = glob('.', GLOB_ONLYDIR);
+
+        // foreach($directories as $dir){
+        //     echo $dir;
+        // }
+
         // echo strpos($testFile, "^title^")."first".strpos($testFile, "^/title^")."last";
         
         // $testFile = token_get_all(file_get_contents("personalSite/index.php"))[1][1]."meow" ;

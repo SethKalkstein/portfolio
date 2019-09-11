@@ -1,3 +1,24 @@
+<?php 
+/**
+ * ^title^Hangman Challange^/title^
+ * 
+ * ^gitRepo^ ^/gitRepo^
+ * 
+ * ^tech^ ^/tech^
+ * 
+ * ^highlights^ ^/highlights^
+ * 
+ * ^description^ ^/description^
+ * 
+ * ^image^ ^/image^
+ * 
+ * ^path^ ^/path^
+ * 
+ * ^order^ ^/order^
+ * 
+ */
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

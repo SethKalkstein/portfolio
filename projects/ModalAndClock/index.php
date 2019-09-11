@@ -1,3 +1,23 @@
+<?php 
+/**
+ * ^title^Modal and Clock JS ^/title^
+ * 
+ * ^gitRepo^ ^/gitRepo^
+ * 
+ * ^tech^ ^/tech^
+ * 
+ * ^highlights^ ^/highlights^
+ * 
+ * ^description^ ^/description^
+ * 
+ * ^image^ ^/image^
+ * 
+ * ^path^ ^/path^
+ * 
+ * ^order^ ^/order^
+ * 
+ */
+?>
 <!DOCTYPE html>
 
 <html>
@@ -11,7 +31,7 @@
 	<header>
 		<nav>
 			<a href="modal.html">Modal Page</a>
-			<a href="index.html">Clock Page</a>
+			<a href="index.php">Clock Page</a>
 		</nav>
 		<div>
 			<h1>Project number 4 - The Modal and Digital Clock Site </h1>
