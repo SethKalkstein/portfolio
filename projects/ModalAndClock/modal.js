@@ -22,7 +22,7 @@ function createModal(){
 	boxText.innerHTML = "anim id est laborum. Lorem ipsum dolorlore mlorem est laborum. Lorem ipsum dolorlorem.";
 	boxText.style.padding = "10px";
 	//styling for the link which takes you to the clock page	
-	boxLink.setAttribute("href", "index.html");
+	boxLink.setAttribute("href", "index.php");
 	boxLink.innerHTML = "Click here to go to the clock";
 	boxLink.style.padding = "10px";
 	//attach the modal to the document and the modal's element to the modal
