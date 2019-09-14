@@ -2,19 +2,19 @@
 /**
  * ^title^Pokemon Roledex^/title^
  * 
- * ^gitRepo^ ^/gitRepo^
+ * ^gitRepo^https://github.com/SethKalkstein/pokedex^/gitRepo^
  * 
- * ^tech^ ^/tech^
+ * ^tech^JavaScript, Ajax, JSON, CSS, HTML^/tech^
  * 
- * ^highlights^ ^/highlights^
+ * ^highlights^Object Oriented Programming, API calls, ^/highlights^
  * 
- * ^description^ ^/description^
+ * ^description^A roledex of Pokemons, showcasing API calls and Object Oriented Programming^/description^
  * 
- * ^image^ ^/image^
+ * ^image^pokedex.png^/image^
  * 
- * ^path^ ^/path^
+ * ^path^here^/path^
  * 
- * ^order^ ^/order^
+ * ^order^4^/order^
  * 
  */
 ?>

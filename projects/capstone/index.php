@@ -1,20 +1,20 @@
 <?php 
 /**
- * ^title^Hangman Challange^/title^
+ * ^title^Hangman Word Challenge^/title^
  * 
- * ^gitRepo^ ^/gitRepo^
+ * ^gitRepo^https://github.com/SethKalkstein/capstone^/gitRepo^
  * 
- * ^tech^ ^/tech^
+ * ^tech^JavaScript, JQuery, CSS, HTML^/tech^
  * 
- * ^highlights^ ^/highlights^
+ * ^highlights^Timer, Game Scoring, Event Listeners, Random Generator, Local Storage, Sorting, Letter Search, Modals^/highlights^
  * 
- * ^description^ ^/description^
+ * ^description^The classic game of Hangman. Guess a letter^/description^
  * 
- * ^image^ ^/image^
+ * ^image^hangman.png^/image^
  * 
- * ^path^ ^/path^
+ * ^path^here^/path^
  * 
- * ^order^ ^/order^
+ * ^order^2^/order^
  * 
  */
 ?>

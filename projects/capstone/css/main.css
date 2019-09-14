@@ -11,13 +11,13 @@ main {
   grid-template-areas: "input     timer" "word       word" "letters  letters" "hint        hint" "images     images" "winners  winners";
   grid-template-columns: 1fr 1fr;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   main {
     grid-template-areas: "input    timer    word" "none     none    images" "hint     hint   images" "letters  letters  images" "winners winners  winners";
     grid-template-columns: 17% 17% 66%;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   main {
     grid-template-areas: "input  timer    word" "input images letters" "hint  images  winners";
     grid-template-columns: 2fr 3fr 5fr;
@@ -62,12 +62,12 @@ body {
   position: relative;
   padding: 5px;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   body {
     padding: 10px;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   body {
     padding: 20px;
   }
@@ -88,7 +88,7 @@ header span {
 header p:hover > span {
   display: inline;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   header span {
     display: inline;
   }
@@ -97,7 +97,7 @@ header p:hover > span {
     text-shadow: 3px 3px black;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   header h1 {
     text-shadow: 6px 4px black;
     font-size: 6em;
@@ -135,7 +135,7 @@ header p:hover > span {
   font-size: 25px;
   padding: 5px;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #userInput #letterHolder {
     width: 60px;
     font-size: 110px;
@@ -146,7 +146,7 @@ header p:hover > span {
     padding: 0px;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #userInput #letterHolder {
     width: 80px;
     font-size: 150px;
@@ -167,7 +167,7 @@ header p:hover > span {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #wordHolder {
     font-weight: bolder;
     font-size: 35px;
@@ -175,7 +175,7 @@ header p:hover > span {
     text-align: left;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #wordHolder {
     font-size: 50px;
   }
@@ -193,7 +193,7 @@ header p:hover > span {
   font-size: 60px;
   padding: 0px;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #timerArea h3 {
     font-size: 30px;
   }
@@ -202,7 +202,7 @@ header p:hover > span {
     padding: 0px;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #timerArea {
     font-weight: bold;
   }
@@ -225,7 +225,7 @@ header p:hover > span {
   text-transform: uppercase;
   font-size: 25px;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #usedLetters {
     border-bottom: 1px solid black;
     margin-bottom: 5px;
@@ -235,7 +235,7 @@ header p:hover > span {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #usedLetters {
     margin-top: 30px;
   }
@@ -268,7 +268,7 @@ header p:hover > span {
 #hintArea #hint {
   font-size: 25px;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #hintArea {
     margin-top: 20px;
     border-bottom: 1px solid black;
@@ -284,7 +284,7 @@ header p:hover > span {
     padding: 10px;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #hintArea {
     margin-top: 0px;
   }
@@ -305,13 +305,13 @@ header p:hover > span {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #hangmanImageWrapper img {
     height: 300px;
     margin: 50px;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #hangmanImageWrapper img {
     height: 450px;
   }
@@ -339,7 +339,7 @@ header p:hover > span {
 #winnerArea table td {
   border: 1px solid black;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #winnerArea h3 {
     font-size: 50px;
   }
@@ -350,7 +350,7 @@ header p:hover > span {
     border-bottom: 5px solid black;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #winnerArea h3 {
     font-size: 70px;
   }
@@ -376,7 +376,7 @@ header p:hover > span {
   font-size: 1.6em;
   border-radius: 10px;
 }
-@media screen and (min-width: 625px) and (max-width: 1400px) {
+@media screen and (min-width: 625px) and (max-width: 1200px) {
   #gameOver {
     font-size: 2em;
   }
@@ -387,7 +387,7 @@ header p:hover > span {
     font-size: 25px;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1201px) {
   #gameOver {
     widows: 65%;
     font-size: 3em;

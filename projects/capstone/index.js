@@ -444,7 +444,7 @@ function scoreGen(winner) {
 }
 
 /**
- * decides whether of not thier name goes on the score board
+ * decides whether or not thier name goes on the score board
  *  
  * @param {number} finalScore an integer created in the scoreGen function
  * 
