@@ -2,19 +2,19 @@
 /**
  * ^title^SJK Real Estate^/title^
  * 
- * ^gitRepo^ ^/gitRepo^
+ * ^gitRepo^https://github.com/SethKalkstein/SJKRESite^/gitRepo^
  * 
- * ^tech^ ^/tech^
+ * ^tech^JavaScript, CSS, HTML^/tech^
  * 
- * ^highlights^ ^/highlights^
+ * ^highlights^JavaScript Animations, Slider, click events, Mobile Responsive, Single Page Design^/highlights^
  * 
- * ^description^ ^/description^
+ * ^description^Sample Site for a real estate agent.^/description^
  * 
- * ^image^ ^/image^
+ * ^image^sjkre.png^/image^
  * 
  * ^path^here^/path^
  * 
- * ^order^ ^/order^
+ * ^order^3^/order^
  * 
  */
 ?>

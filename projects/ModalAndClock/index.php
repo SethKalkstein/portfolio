@@ -2,20 +2,20 @@
 /**
  * ^title^Modal and Clock JS ^/title^
  * 
- * ^gitRepo^ ^/gitRepo^
+ * ^gitRepo^https://github.com/SethKalkstein/ModalAndClock^/gitRepo^
  * 
- * ^tech^ ^/tech^
+ * ^tech^JavaScript, CSS, HTML^/tech^
  * 
- * ^highlights^ ^/highlights^
+ * ^highlights^callback functions, setTimeout, setInterval^/highlights^
  * 
- * ^description^ ^/description^
+ * ^description^A two page site that displays a modal after 3 seconds or a clock who's background changes every second based on current time^/description^
  * 
- * ^image^ ^/image^
+ * ^image^clock.png^/image^
  * 
- * ^path^ ^/path^
+ * ^path^here^/path^
  * 
- * ^order^ ^/order^
- * 
+ * ^order^5^/order^
+ *  
  */
 ?>
 <!DOCTYPE html>

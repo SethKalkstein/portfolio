@@ -8,13 +8,13 @@
  * 
  * ^highlights^File Parsing, String Manipulation, Contact Form^/highlights^
  * 
- * ^description^The site you're on right now!^/description^
+ * ^description^The site you're on right now! This section showcasing automatic project generation through processing of header information.^/description^
  * 
- * ^image^sethSite.jpg^/image^
+ * ^image^sethSite.png^/image^
  * 
  * ^path^https://www.sethjkalkstein.com^/path^
  * 
  * ^order^1^/order^
- * 
+ *  
  */
 ?>
