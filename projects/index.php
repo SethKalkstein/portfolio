@@ -6,8 +6,9 @@
     include "../resources/header.php"; 
     include "../resources/mainnav.php";
 ?>
-
-    <h1>This will be the projects page</h1>
+<main>
+    <h1>Projects</h1>
+    <p>The HTML you're seeing below was automatically generated using PHP functions that I wrote to parse information in comments at the head of each projects index file.</p>
 <?php 
 
     /**
@@ -118,7 +119,7 @@
     createProjectHTML(createProjectArray());
 
     ?>
-
+</main>
 <?php include "resources/footer.php" ?>
 
 <a href=""></a>

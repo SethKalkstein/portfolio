@@ -12,9 +12,7 @@
 ?>
 
 <header>
-    <h1><?php echo "meow meow meow" ?></h1>
         <nav>
-            <h3>nav bar will go here</h3>
             <ul>
                 <li><a href="/portfolio/index.php">About</a></li>
                 <li><a href="/portfolio/projects/index.php">Projects</a></li>
@@ -22,4 +20,6 @@
                 <li><a href="/portfolio/contact.php">Contact</a></li>
             </ul>
         </nav>
+        <h1>Seth J Kalkstein</h1>
+        <h3>Full Stack Developer</h3>
     </header>
