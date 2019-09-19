@@ -1,0 +1,101 @@
+
+#intro{
+    height: 35vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.1rem;
+      }
+      p{
+          text-align: left;
+          font-size: 1rem;
+      }
+      @include largerDisplay {
+        height: 30vh;
+        padding: 2rem;
+          h1{
+            font-size: 4rem;
+            margin-bottom: 1.25rem;
+          }
+          p{
+              font-size: 1.66rem;
+          }
+      }
+}
+
+#project-container{
+    box-sizing: border-box;
+    max-width: 1300px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 3rem;
+}
+
+.project{ 
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    background-color: rgb(219, 255, 198);
+    margin-bottom: 2rem;
+    
+    img{
+        width: 100%;
+        height: 300px;
+    }
+    .info{
+        padding: 1rem;
+        h3{
+            margin-bottom: .5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        p{
+            padding: .5rem;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        .link-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        a{
+            text-decoration: none;
+            margin: 1rem;
+            padding: .5rem;
+            background-color: black;
+            color: rgb(110, 184, 68);
+        }
+        a:hover{
+            background-color: rgb(9, 20, 3);
+            color: rgb(219, 255, 198);
+        }
+    }
+
+    @include largerDisplay {
+        display: grid; 
+        img {
+            height: 400px;
+        }
+        .info{
+            h3{
+                padding-bottom: .75rem;
+                font-size: 1.75rem;
+            }
+            p{
+                padding: .75rem;
+                font-size: 1.25rem;
+            }
+        } 
+    }
+
+}
+@include largerDisplay {
+    .project:nth-child(even) img{
+        order: 2;
+    }
+}

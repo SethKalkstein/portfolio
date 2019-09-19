@@ -1,0 +1,86 @@
+
+header {
+    background-image: url("../../images/headerBackground.jpg");
+    height: 400px;
+    color: white;
+    text-shadow: 2px 2px rgb(29, 29, 29);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-weight: bold;
+        padding: 1px 10px;
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 90px;
+
+        li{
+            display: inline;
+            padding: 4px 8px;
+        }
+        a {
+            font-family: 'Andale Mono', monospace;
+            text-decoration: none;
+            color: white;
+            text-shadow: 3px 3px 3px rgb(29, 29, 29);
+        }
+        #currentPage{
+            color: rgb(174, 212, 113);
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        a:hover{
+            color: green;
+        }
+    }
+    @include largerDisplay {
+        height: 600px;
+        h1 {
+            font-size: 90px;
+        }
+    
+        h3 {
+            font-size: 55px;
+        }
+        ul {
+            font-size: 40px;
+            margin-top: 100px;
+            margin-bottom: 150px;
+        }
+    }
+}
+
+footer {
+    background-image: url("../../images/headerBackground.jpg");
+    color: white;
+    padding: 15px;
+
+    h5 {
+        font-size: 25px;
+        text-shadow: 2px 2px rgb(29, 29, 29);
+        padding: 5px;
+    }
+
+    @include largerDisplay {
+        padding: 30px;
+        h5{
+            font-size: 35px;
+            padding: 10px;
+        }
+    }
+}
