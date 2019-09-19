@@ -6,9 +6,11 @@
     include "../resources/header.php"; 
     include "../resources/mainnav.php";
 ?>
-<main>
-    <h1>Projects</h1>
-    <p>The HTML you're seeing below was automatically generated using PHP functions that I wrote to parse information in comments at the head of each projects index file.</p>
+    <div id="intro">
+        <h1>Projects</h1>
+        <p>The HTML you're seeing below was automatically generated using PHP functions that I wrote to parse information in comments at the head of each project's index file.</p>
+    </div>
+    <main id="project-container">
 <?php 
 
     /**
@@ -82,27 +84,53 @@
         
         usort($theProjects, "byOrder");
         
-        foreach($theProjects as $project){
+        foreach($theProjects as $i => $project){
+            echo "<section class='project' ".sectionAOSClass($i).">";
+            
+                createImgHTML($project["image"], $project["title"]);
+            
+                    echo "<div class='info'>";
 
-            createImgHTML($project["image"], $project["title"]);
-            echo "<h3>".$project["title"]."</h3>";
-            echo "<p>Technology used: ".$project["tech"]."</p>";
-            echo "<p>Project highlights: ".$project["highlights"]."</p>";
-            echo "<p>Description: ".$project["description"]."</p>";
-            echo '<a target="_blank" href="'.$project["gitRepo"].'">gitHub</a>';
-            projectLinkHTML($project["dir"],$project["path"]);
+                        echo "<h3>".$project["title"]."</h3>";
+                        echo "<p>Technology used: ".$project["tech"]."</p>";
+                        echo "<p>Project highlights: ".$project["highlights"]."</p>";
+                        echo "<p>Description: ".$project["description"]."</p>";
+
+                        echo "<div class='link-container'>";
+                            echo '<a target="_blank" href="'.$project["gitRepo"].'">gitHub</a>';
+                            projectLinkHTML($project["dir"],$project["path"]);
+                        echo "</div>";
+                        
+                    echo "</div>";
+
+            echo "</section>";
             // echo "<a href='".$project["dir"]."/index.php'>See this project</a>";
         }
     }
+/**
+ * will assign a class for the element to alternate fade left or right
+ * exluding 
+ * 
+ * @param {integer} count in the foreach loop represent each section 
+ * representing each section of project class
+ * 
+ * @return {string} attribute text to be added to the section tag
+ */
+    function sectionAOSClass($alternate) {
+        return $alternate % 2 ? "data-aos='fade-right'" : "data-aos='fade-left'";     
+    }
+
     /**
      * creates the html for the project image
      * @param {string} $img
      * @param {string} $title
+     * 
+     * no return value (echos the HTML directly)
      */
     function createImgHTML(string $img, string $title){
         $src = '../images/projectImages/'.$img;
         $alt = 'Screenshot of the '.$title.' project.';
-        echo '<br><img src="'.$src.'" alt="'.$alt.'">';
+        echo '<img src="'.$src.'" alt="'.$alt.'">';
     }
     /**
      * check to see if the project is contained "here" meaning the project directory is
@@ -110,6 +138,8 @@
      * contained somewhere else.
      * @param {string} $dir the directory of this project
      * @param {string} $path the path of the project or "here" if it is in the project directory 
+     * 
+     * no return value (echos the HTML directly)
      */
     function projectLinkHTML(string $dir, string $path){
         $href = $path == "here" ? $dir."/index.php" : $path;
@@ -120,7 +150,12 @@
 
     ?>
 </main>
-<?php include "resources/footer.php" ?>
-
-<a href=""></a>
-<img src="" alt="">
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 250, // offset (in px) from the original trigger point
+        delay: 50, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+    });
+  </script>
+<?php include "../resources/footer.php" ?>

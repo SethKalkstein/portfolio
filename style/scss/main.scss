@@ -1,0 +1,29 @@
+@import "mixins";
+@import "headerFooter";
+@import "about";
+@import "projects";
+@import "contact";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Andale Mono', monospace;
+}
+
+
+body {
+    color: black;
+    background-color: ivory;
+}
+
+main {
+    
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+

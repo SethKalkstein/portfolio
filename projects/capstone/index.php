@@ -32,7 +32,7 @@
 <body>
 	<header>
 		<h1>Welcome to Hangman</h1>
-		<p>Figure out a word by guessing one letter at a time...<span> You get 6 misses total. If you need help press the hint hint button. You will loose points for using a hint and for missed letters. You will gain points for completeing the word.</span></p>
+		<p>Figure out a word by guessing one letter at a time...<span> You get 6 misses total. If you need help press the hint hint button. You will lose points for using a hint and for missed letters. You will gain points for completeing the word.</span></p>
 	</header>
 
 	<main>		
