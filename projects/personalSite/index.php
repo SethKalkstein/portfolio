@@ -6,9 +6,9 @@
  * 
  * ^tech^PHP, HTML, SASS^/tech^
  * 
- * ^highlights^File Parsing, String Manipulation, Contact Form^/highlights^
+ * ^highlights^Dynamic Content Generation, File Parsing, String Manipulation, HTML Form^/highlights^
  * 
- * ^description^The site you're on right now! This section showcasing automatic project generation through processing of header information.^/description^
+ * ^description^The site you're on right now! This section is showcasing automatic project generation through processing of header information.^/description^
  * 
  * ^image^sethSite.png^/image^
  * 
@@ -18,3 +18,4 @@
  *  
  */
 ?>
+<?php header("location: ../../index.php");  ?>

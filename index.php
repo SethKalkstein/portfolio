@@ -77,12 +77,12 @@
     <section class="about">
         <h2>Do I have other interests?</h2>
         <img src="images/kitties.jpg" alt="A striped cat and grey tuxedo cat">
-        <p>Of course! I love cats, with a particular affinity for rescue cats that have stripes or grey tuxedos. I ride my bicycle on a daily basis, and also like to hike, ice skate, and ski. Recently I've gotten into gardening, and am proud to have kept most of my flowers, herbs, and other plants alive. (but squirrels ate my Sun Gold tomatoes) I'm always up for watching Star Trek, especially while eating a good peice of cheese and drinking some strong loose leaf tea, preferably with a striped and grey tuxedo cat at my side.</p>
+        <p>Of course! I love cats, with a particular affinity for rescue cats who have stripes or grey tuxedos. I ride my bicycle on a daily basis, and I also like to hike, ice skate, and ski. Recently I've gotten into gardening, and am proud to have kept most of my flowers, herbs, and other plants alive - despite squirrels eating my Sun Gold tomatoes! I'm always up for watching Star Trek, especially while eating a good piece of cheese and drinking some strong loose leaf tea, preferably with a striped cat and grey tuxedo cat by my side.</p>
     </section>
 
     <section class="about">
         <h2>Anything else?</h2>
-        <p>Head on over to my <a href="projects/index.php">projects page</a> to see a few selected projects including the code for this site. If you want to know any more about me or think that I would be a good fit for your team, feel free to <a href="contact.php">contact</a> me.</p>
+        <p>Head on over to my <a href="projects/index.php">Projects</a> page to see a few selected projects including the code for this site. If you want to know more about me and have some questions or think that I would be a good fit for your team, feel free to <a href="contact.php">contact</a> me.</p>
     </section>
 </main>
 

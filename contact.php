@@ -30,8 +30,8 @@
     </section>
 
     <section id="contact-links">
-        <a target="_blank" href="https://www.linkedin.com/in/seth-kalkstein"><img src="images/LI-In-Bug.png" alt="Linked-In Logo" title="Visit My Linked-In Profile"></a>
-        <a target="_blank" href="https://github.com/SethKalkstein"><img src="images/GitHub-Mark-Light-120px-plus.png" alt="Git Hub Logo" title="Check Out My Code on Git Hub"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/seth-kalkstein"><img src="images/LI-In-Bug.png" alt="LinkedIn Logo" title="Visit My LinkedIn Profile"></a>
+        <a target="_blank" href="https://github.com/SethKalkstein"><img src="images/GitHub-Mark-Light-120px-plus.png" alt="GitHub Logo" title="Check Out My Code on GitHub"></a>
         <a href="mailto:seth@sethjkalkstein.com"><img src="images/icons8-important-mail-100.png" alt="Email Logo" title="Send Me an Email"></a>
     </section>
     </main>

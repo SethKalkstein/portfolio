@@ -4,11 +4,11 @@
  * 
  * ^gitRepo^https://github.com/SethKalkstein/capstone^/gitRepo^
  * 
- * ^tech^JavaScript, JQuery, CSS, HTML^/tech^
+ * ^tech^JavaScript, JQuery, CSS, HTML, SASS^/tech^
  * 
  * ^highlights^Timer, Game Scoring, Event Listeners, Random Generator, Local Storage, Sorting, Letter Search, Modals^/highlights^
  * 
- * ^description^The classic game of Hangman. Guess a letter^/description^
+ * ^description^The classic game of Hangman with some added features. Guess a letter!^/description^
  * 
  * ^image^hangman.png^/image^
  * 
