@@ -1,14 +1,14 @@
 <?php 
 /**
- * ^title^Pokemon Roledex^/title^
+ * ^title^Pokemon Rolodex^/title^
  * 
  * ^gitRepo^https://github.com/SethKalkstein/pokedex^/gitRepo^
  * 
  * ^tech^JavaScript, Ajax, JSON, CSS, HTML^/tech^
  * 
- * ^highlights^Object Oriented Programming, API calls, ^/highlights^
+ * ^highlights^Object Oriented Programming, API calls, Mobile Friendly^/highlights^
  * 
- * ^description^A roledex of Pokemons, showcasing API calls and Object Oriented Programming^/description^
+ * ^description^A rolodex of Pokemon, showcasing API calls and Object Oriented Programming^/description^
  * 
  * ^image^pokedex.png^/image^
  * 

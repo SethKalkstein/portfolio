@@ -6,9 +6,9 @@
  * 
  * ^tech^JavaScript, CSS, HTML^/tech^
  * 
- * ^highlights^JavaScript Animations, Slider, click events, Mobile Responsive, Single Page Design^/highlights^
+ * ^highlights^JavaScript Animations, Slider, Click Events, Mobile Responsive, Timeout, Interval, Single Page Design^/highlights^
  * 
- * ^description^Sample Site for a real estate agent.^/description^
+ * ^description^Sample site for a real estate agent.^/description^
  * 
  * ^image^sjkre.png^/image^
  * 

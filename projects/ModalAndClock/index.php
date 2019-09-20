@@ -6,9 +6,9 @@
  * 
  * ^tech^JavaScript, CSS, HTML^/tech^
  * 
- * ^highlights^callback functions, setTimeout, setInterval^/highlights^
+ * ^highlights^callback functions, setTimeout, setInterval, Modals^/highlights^
  * 
- * ^description^A two page site that displays a modal after 3 seconds or a clock who's background changes every second based on current time^/description^
+ * ^description^A two-page site that displays a modal after 3 seconds or a clock whose background changes every second based on current time^/description^
  * 
  * ^image^clock.png^/image^
  * 
