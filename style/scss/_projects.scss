@@ -1,6 +1,9 @@
 
 #intro{
     height: 35vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -31,9 +34,15 @@
 #project-container{
     box-sizing: border-box;
     max-width: 1300px;
-    margin: auto;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     overflow: auto;
     padding: 0 3rem;
+    width: 95%;
+    @include largerDisplay {
+        width: 80%;
+    }
 }
 
 .project{ 
@@ -41,21 +50,20 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     background-color: rgb(219, 255, 198);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     
     img{
+        max-height: 400px;
         width: 100%;
-        height: 300px;
     }
     .info{
-        padding: 1rem;
+        padding: .5rem;
         h3{
             margin-bottom: .5rem;
             font-size: 1.5rem;
             text-align: center;
         }
         p{
-            padding: .5rem;
             font-size: 1.1rem;
             margin-bottom: 1rem;
         }
@@ -65,8 +73,8 @@
         }
         a{
             text-decoration: none;
-            margin: 1rem;
             padding: .5rem;
+            margin: .25rem;
             background-color: black;
             color: rgb(110, 184, 68);
         }
@@ -84,10 +92,9 @@
         .info{
             h3{
                 padding-bottom: .75rem;
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
             p{
-                padding: .75rem;
                 font-size: 1.25rem;
             }
         } 

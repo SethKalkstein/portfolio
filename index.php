@@ -12,7 +12,7 @@
     include "resources/header.php"; 
     include "resources/mainnav.php";
 ?>
-<main>
+<main id="about-container">
 
     <section class="about">
         <h2>Why do I write code?</h2>
