@@ -3,11 +3,6 @@
  * 
  * Navigation for the main portion of the site.
  * 
- * Some of the projects may have different navigation, 
- * so I'm seperating this out in case there is another 
- * nav later
- * 
- * 
  */
 ?>
 
@@ -28,7 +23,13 @@ function getCurrentFile(){
  * 
  */
 function makeListTags(){
-    $listOfLinks = ["About" => "/portfolio/index.php", "Projects" => "/portfolio/projects/index.php", "Resume" => "/portfolio/resume.pdf", "Contact" => "/portfolio/contact.php"];
+    //add prefix for production
+    $rootPrefix = "";
+    if ($_SERVER['SERVER_NAME'] == "localhost"){
+        $rootPrefix = "/portfolio";
+    }
+
+    $listOfLinks = ["About" => $rootPrefix."/index.php", "Projects" => $rootPrefix."/projects/index.php", "Resume" => $rootPrefix."/resume.pdf", "Contact" => $rootPrefix."/contact.php"];
 
     foreach($listOfLinks as $lTitle => $lLink){
         $idText = "";
@@ -44,8 +45,8 @@ function makeListTags(){
 <header>
         <nav>
             <ul>
-
-            <?php makeListTags();  ?>
+                <!-- dynamically generated above -->
+                <?php makeListTags();  ?>
 
             </ul>
         </nav>

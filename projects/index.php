@@ -1,6 +1,7 @@
 <?php 
 /**
  * Summary of projects with links to those projects and to thier github repos, including this very website!
+ * This was the most fun page to write on the site
  */
 
     include "../resources/header.php"; 
