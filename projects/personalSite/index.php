@@ -10,7 +10,7 @@
  * 
  * ^description^The site you're on right now! This section is showcasing automatic project generation through processing of header information.^/description^
  * 
- * ^image^sethSite.png^/image^
+ * ^image^personalSite.png^/image^
  * 
  * ^path^https://www.sethjkalkstein.com^/path^
  * 
