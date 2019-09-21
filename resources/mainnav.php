@@ -25,15 +25,18 @@ function getCurrentFile(){
 function makeListTags(){
     //add prefix for production
     $rootPrefix = "";
+    $addPrefix = "";
     if ($_SERVER['SERVER_NAME'] == "localhost"){
         $rootPrefix = "/portfolio";
+    } else {
+        $addPrefix = "3/public_html/sethjkalkstein.com";
     }
 
     $listOfLinks = ["About" => $rootPrefix."/index.php", "Projects" => $rootPrefix."/projects/index.php", "Resume" => $rootPrefix."/resume.pdf", "Contact" => $rootPrefix."/contact.php"];
 
     foreach($listOfLinks as $lTitle => $lLink){
         $idText = "";
-        if (getCurrentFile() ==  $lLink){
+        if (getCurrentFile() ==  $addPrefix.$lLink){
             $idText = 'id="currentPage"';
         }
         echo '<li><a '.$idText.' href="'.$lLink.'">'.$lTitle.'</a></li>';
