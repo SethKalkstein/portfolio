@@ -48,7 +48,12 @@
 			//assign a random human from the database (there's a HumanID foreign key, this will insure that it matches an existing one)
 			$sqlHumans = "SELECT humanID FROM Human";
 			$humanResult = mysqli_query($conn, $sqlHumans);
-			$allHumans = mysqli_fetch_all($humanResult, MYSQLI_NUM);
+			// $allHumans = mysqli_fetch_all($humanResult, MYSQLI_NUM);
+			while($human = mysqli_fetch_array($humanResult, MYSQLI_NUM)){
+				$allHumans[] = $human;	
+			}
+
+
 			$randomHuman = $allHumans[rand(0,count($allHumans)-1)][0];
 
 			//insert row into database

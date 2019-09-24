@@ -70,8 +70,10 @@
 			//get the human selected from the drop down menu from human table (there's a HumanID foreign key, this will insure that it matches an existing one)
 			$sqlHuman = "SELECT humanID FROM Human where humanName = '$humanName';";
 			$humanResult = mysqli_query($conn, $sqlHuman);
-			$oneHuman = mysqli_fetch_all($humanResult, MYSQLI_NUM);
-			$oneHumanID = $oneHuman[0][0];
+			// $oneHuman = mysqli_fetch_all($humanResult, MYSQLI_NUM);
+			// $oneHumanID = $oneHuman[0][0];
+
+			$oneHumanID = mysqli_fetch_array($humanResult, MYSQLI_NUM)[0];
 
 			//SQL code for update Pet table with data entered by use and humanID that corresponds to the human they chose ($oneHumanID)
 			$sqlUpdate = "UPDATE Pet SET petAge = $petAge, petSpecies = '$petSpecies', petName = '$petName', humanID = $oneHumanID WHERE petID = $petID;";
@@ -131,7 +133,10 @@
 		$pet = mysqli_fetch_assoc($result);
 
 		//fetch all human names
-		$humanList = mysqli_fetch_all($humanListResult, MYSQLI_NUM);
+		// $humanList = mysqli_fetch_all($humanListResult, MYSQLI_NUM);
+		while($human = mysqli_fetch_array($humanListResult, MYSQLI_NUM)){
+			$humanList[] = $human;	
+		}
 
 		//initialize edit form with data fetched in queries
 		if(isset($_POST["edit"])) {
