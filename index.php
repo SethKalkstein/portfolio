@@ -4,7 +4,7 @@
  * 
  * This is the homepage.
  * 
- * This will have a quick summary of the info contained on the rest of the site
+ * The home page also acts as the about page
  * 
  */
 ?>
