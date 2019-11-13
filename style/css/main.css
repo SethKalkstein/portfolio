@@ -97,6 +97,7 @@ footer h5 {
 .about p {
   font-size: 15px;
   text-align: left;
+  padding-bottom: 10px;
 }
 .about img {
   height: 100px;
@@ -127,6 +128,7 @@ footer h5 {
   }
   .about p {
     font-size: 25px;
+    padding: 17px;
   }
   .about img {
     height: 150px;
