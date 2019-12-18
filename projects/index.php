@@ -43,6 +43,7 @@
  */
     function createProjectArray(){
         $projectArray = [];
+        //use arraydiff to eliminate linux's current and parent directory representations "." and ".."
         foreach ( array_diff(scandir("."), array('..', '.')) as $dir) {
             if (is_dir($dir)) {
                 // echo "<br> dir: ".$dir."<br>";
