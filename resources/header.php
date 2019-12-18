@@ -5,7 +5,7 @@
 ?>
 
 <?php 
-//add prefix for production
+//add prefix for development, none for production
     $rootPrefix = "";
     if ($_SERVER['SERVER_NAME'] == "localhost"){
         $rootPrefix = "/portfolio";

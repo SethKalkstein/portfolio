@@ -168,7 +168,7 @@
 
 	<div>
 		<?php if($pet): ?>
-			<h3><?php echo htmlspecialchars($pet[petName]); ?></h3>
+			<h3><?php echo htmlspecialchars($pet['petName']); ?></h3>
 			<ul>
 				<?php
 					$labels = ["petAge" => "Pet's Age", "petSpecies" => "Pet's Species", "humanName" => "Human's Name"]; 
