@@ -1,6 +1,6 @@
 # portfolio
 Personal Webpage
 
-Learn about me here
+Learn about me
 
 And see my projects
