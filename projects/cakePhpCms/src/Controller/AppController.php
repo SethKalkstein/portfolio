@@ -64,8 +64,16 @@ class AppController extends Controller
             ],
             "unauthorizedRedirect" => $this->referer()
         ]);
+        
+        $this->Auth->allow(["display", "view", "index", "edit"]);
 
-        $this->Auth->allow(["display", "view", "index"]);
+        $currentUser = $this->Auth->user('email');
+        $isLoggedIn = is_null($currentUser) ? false : true;
+        $greetingName = $isLoggedIn ? $this->formatName($currentUser) : "";
+        $greetingMessage = ($isLoggedIn ? "Hello " : "Please Log In" ).$greetingName;
+        $this->set('greetingName', $greetingName);
+        $this->set('greetingMessage', $greetingMessage);
+        $this->set("isLoggedIn", $isLoggedIn);
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -76,5 +84,10 @@ class AppController extends Controller
     public function isAuthorized($user)
     {
      return false;   
+    }
+    private function formatName($emailAddress){
+        $atSignPos = strpos($emailAddress, "@");
+        $greetingName = substr($emailAddress, 0, $atSignPos);
+        return ucfirst($greetingName);
     }
 }
