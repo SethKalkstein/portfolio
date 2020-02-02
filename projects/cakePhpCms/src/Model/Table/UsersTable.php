@@ -40,6 +40,10 @@ class UsersTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->belongsTo('Roles', [
+            'foreignKey' => 'role_id',
+        ]);
+
         $this->hasMany('Articles', [
             'foreignKey' => 'user_id',
         ]);
@@ -68,6 +72,30 @@ class UsersTable extends Table
             ->requirePresence('password', 'create')
             ->notEmptyString('password');
 
+        // $validator
+            // ->integer('role_id')
+            // ->requirePresence('role_id')
+            // ->requirePresence('role_id', 'create') doesn't work, but why!?
+            // ->allowEmpty('role_id', false, 'create') //does work 
+            // ->range('role_id', [1,3], "user role not within valid range", "create");
+
+        $validator
+            ->scalar('fname')
+            ->maxLength('fname', 255)
+            ->requirePresence('fname', 'create')
+            ->notEmptyString('fname');
+
+        $validator
+            ->scalar('lname')
+            ->maxLength('lname', 255)
+            ->requirePresence('lname', 'create')
+            ->notEmptyString('lname');
+
+/*         $validator
+            ->boolean('active')
+            ->requirePresence('active', 'create')
+            ->allowEmpty('active', false, 'create');
+             */
         return $validator;
     }
 

@@ -20,12 +20,40 @@ class UsersController extends AppController
     public function initialize()
     {
         parent::initialize();
-        $this->Auth->allow(["logout", "add"]);
+
+        // $this->Auth->allow(["logout", "add"]);
+        //set the authenticated as a user object or false if noone is logged in
+        $loggedIn = $this->Auth->user() ? $this->getLoggedIn() : false;
+        $this->Auth->allow(["logout", "delete",
+            (!$loggedIn || $loggedIn->role_id == 1 ? "add" : "")]);
+            // ($loggedIn && $loggedIn->role_id ==1 ? "delete" : "")]);
+        if(!$loggedIn) $this->Auth->deny('edit', 'index', 'view', 'delete');
+        $this->set('loggedIn', $loggedIn);
+        // $loggedUser = $this->Auth->identify();
+        // echo "Using Identify: ".var_dump($loggedUser);
+        // $loggedInUser = $this->Users->get($this->Auth->user('id'));
+        // echo "Using Nested Get: ";
+        // echo var_dump($loggedInUser);
+        // $other = $this->Users->get(3);
+        // echo var_dump($other);
     }
+
+     private function getLoggedIn(){
+
+        $loggedInUser = $this->Auth->user() ? $this->Users->get($this->Auth->user('id')) : false;
+
+        return $loggedInUser;
+     }
 
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Roles']
+        ];
+
         $users = $this->paginate($this->Users);
+
+        $this->set('_serialize', ['users']);
 
         $this->set(compact('users'));
     }
@@ -39,10 +67,11 @@ class UsersController extends AppController
      */
     public function view($id = null)
     {
+ 
         $user = $this->Users->get($id, [
-            'contain' => ['Articles'],
+            'contain' => ['Articles', 'Roles']
         ]);
-
+        // echo $user->role->name; //that works!!!!!!!
         $this->set('user', $user);
     }
 
@@ -58,12 +87,17 @@ class UsersController extends AppController
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+                if($this->Auth->user()){
+                    return $this->redirect(['action' => 'index']);
+                } else {
+                    return $this->redirect('/');
+                }
             }
+            // $this->Flash->error();
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $this->set(compact('user'));
+        $this->set('roles', $this->Users->Roles->find('list'));
     }
 
     /**
@@ -75,19 +109,30 @@ class UsersController extends AppController
      */
     public function edit($id = null)
     {
+        $loggedIn = $this->getLoggedIn();
+
         $user = $this->Users->get($id, [
             'contain' => [],
         ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+        
+        if ($loggedIn && ($user->id == $loggedIn->id || $loggedIn->role_id == 1)){
+            // echo "You are allowed access here";
+            if ($this->request->is(['patch', 'post', 'put'])) {
+                $user = $this->Users->patchEntity($user, $this->request->getData());
+                if ($this->Users->save($user)) {
+                    $this->Flash->success(__('The user has been saved.'));
+    
+                    return $this->redirect(['action' => 'index']);
+                }
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            $this->set(compact('user'));
+            $this->set('roles', $this->Users->Roles->find('list'));
+        } else {
+            // echo "You are NOT, I say NOT, allowed to access here";
+            $this->Flash->error("You are not allowed to edit user: {$user->lname}, {$user->fname}.");
+            return $this->redirect(['action' => 'index']);
         }
-        $this->set(compact('user'));
     }
 
     /**
@@ -99,16 +144,32 @@ class UsersController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
-        if ($this->Users->delete($user)) {
-            $this->Flash->success(__('The user has been deleted.'));
-        } else {
-            $this->Flash->error(__('The user could not be deleted. Please, try again.'));
+        $loggedIn = $this->getLoggedIn();
+
+        if(!$loggedIn) {
+            $this->Flash->error(__('You do not have access to this area.'));
+            return $this->redirect('/');
         }
 
+        if($user->id == $loggedIn->id || $loggedIn->role_id == 1){
+            $this->request->allowMethod(['post', 'delete']);        
+            
+            if ($this->Users->delete($user)) {
+                $this->Flash->success(__('The user has been deleted.'));
+            
+                if ($user->id == $loggedIn->id){
+                    return $this->redirect($this->Auth->logout());
+                }
+            } else {
+                $this->Flash->error(__('The user could not be deleted. Please, try again.'));
+            }
+        } else {
+            $this->Flash->error(__('You do not have access to delete this user.'));
+        }
         return $this->redirect(['action' => 'index']);
     }
+
     public function login()
     {
         if($this->request->is("post")) {
