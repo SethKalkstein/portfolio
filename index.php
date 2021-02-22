@@ -27,34 +27,37 @@
     <img src="images/momJonEphesus2.jpg" alt="Image for 'how did I get here?' (my mother is in this picture.)">
     <p>Not only do I love to build code, but clear communication with clients, customers, colleagues, superiors and subordinates is second nature to me from my background in retail food management and real estate sales. So, with me, you get the complete package - the technical critical thinking skills that it takes to find solutions with computers, and the people skills to work with fellow humans or craft solutions for them.</p>
     <p>In my past and present positions - whether as a team member, team leader, or outside advisor - I made extensive use of computer technology and pattern analysis to increase efficiency, profits, and even team communication. Over the years I found that I was most absorbed in my job when I had the opportunity use my computer to automate, convert data, or make calculations based on conditions I gave it - so much so that I became the go-to person when colleagues needed their spreadsheets debugged! The next logical step was to dive into that state of mind and make it my full-time job. </p>
-    <p>While still working as a real estate agent in late 2018, albeit with a reduced schedule, I completed a full-time on-site immersive full-stack boot camp in Philadelphia called New York Code and Design Academy, where we focused on JavaScript, Ruby, Ruby on Rails, HTML5, and CSS3. (See my <a href="resume.pdf">resume</a> for a complete list of my tech, skills, and concepts) Inevitably, there were still bills to pay after the boot camp ended, so I increased my time spent working in real estate through the summer. In July I was finally able to start shifting my main focus back to writing and learning code, and was able to ramp up my learning even more in the fall. </p>
+    <p>While still working as a real estate agent in late 2018, I completed a full-time on-site immersive full-stack boot camp in Philadelphia called New York Code and Design Academy, where we focused on JavaScript, Ruby, Ruby on Rails, HTML5, and CSS3. (See my <a href="resume.pdf" target="_blank">resume</a> for a complete list of my tech, skills, and concepts) Inevitably, there were still bills to pay after the boot camp ended, so I increased my time spent working in real estate through the summer. In July 2019 I was finally able to start shifting my main focus back to writing and learning code, and was able to ramp up my learning even more in the fall. I reviewed and solidified the concepts I learned at boot camp, taught myself LAMP stack, delved deeper into Java than I ever had before, and had fun with some coding challenges. </p>
 </section>
 
 <section class="about">
     <h2>Where am I now?</h2>
     <img src="images/colorfulCode2.jpg" alt="generic picture of code">
-    <p>Since July, I reviewed and solidified the concepts I learned at boot camp, taught myself LAMP stack, and had fun with some coding challenges. Currently, I’m supplementing my practical programming skills by further exploring traditional computer science concepts. I’m applying many of those concepts and expanding my object oriented programming skills by teaching myself Java. In JavaScript, I’ve been delving deeper into concurrency, ES6 concepts and Typescript. Over the past couple of months I’ve learned Node, along with Express and Mongo, and just started learning Angular. In the next year I’d like to learn mobile development, and further down the road, have some fun tinkering with wearable development. </p>
-    <p>Real life challenges that involve critical thinking, and my love of finding solutions to those challenges, are what brought me to change my career to software development in the first place. I’m excited to get back to working in a team, solving problems for the real world, and learning from my colleague’s solutions (and hopefully in the near future, having them learn from mine) - as that is the environment where my learning and contributions accelerate the fastest. Isn’t a symbiotic work environment a beautiful thing!? I hope to find an entry-level position, apprenticeship that leads to a full-time position, or consultant role that will lead to a full time position, where I can thrive, help grow the company and form a working relationship that will last a long time. Take a look on my <a href=””>resume</a> and you’ll see that I’m a big fan of finding a good work situation and staying there!</p>
+    <p>In January 2020, I was hired as a full-stack developer for University of Pennsylvania, School of Medicine, Standardized Patient Department, writing software that tracks scheduling logistics, casting criteria, and finances for simulated medical visits. See <a href="https://www.med.upenn.edu/spprogram/spms/" target="_blank">SPMS Website</a> for details. I create new features, fix bugs, and maintain a backend heavy multi-user restful web application using Linux, Apache, MySQL, PHP, CSS, HTML, Jquery, vanilla JavaScript, and raw SQL on the CakePHP MVC framework.</p>
+    <p>Real life challenges that involve critical thinking, and my love of finding solutions to those challenges, are what brought me to change my career to software development in the first place. I’m excited to be working in a team environment, solving problems for the real world. I am looking for full time position, where I can thrive, help grow the company and form a working relationship that will last a long time. Take a look on my <a href="resume.pdf" target="_blank">resume</a> and you’ll see that I’m a big fan of finding a good work situation and staying there. If you're looking to mold your future technical leadership from within by hiring a smart developer with proven soft skills imparted by an extensive business and management background, then you've come to the right place!</p>
 </section>
 
 <section class="about">
     <h2>What technologies do I use?</h2>
     <ul>
-<li>Java</li>
+        <li>Java</li>
         <li>JavaScript</li>
         <li>PHP</li>
-<li>Ruby</li>
+        <li>Ruby</li>
         <li>HTML5</li>
         <li>CSS3</li>
-<li>Typescript</li>
-<li>SASS</li>
-<li>Node</li>
-<li>Express</li>
+        <li>Typescript</li>
+        <li>SASS</li>
+        <li>Node</li>
+        <li>Express</li>
         <li>Ruby on Rails</li>
         <li>Jquery</li>
+        <li>React</li>
         <li>MySQL</li>
         <li>SQLite3</li>
-<li>MongoDB</li>
+        <li>Apache Webserver</li>
+        <li>CakePHP</li>
+        <li>MongoDB</li>
         <li>ActiveRecord</li>
         <li>Linux</li>
         <li>Git</li>
